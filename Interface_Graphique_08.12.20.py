@@ -186,7 +186,7 @@ ScreenManager:
             root.manager.current = 'jukebox_choice'            
 <BlindtestScreen>:
     name: 'blindtest'
-    MDToolbar:
+    MDTopAppBar:
         title: "Blindtest"
         pos_hint: {"top": 1}
         id: compteur1
@@ -208,7 +208,7 @@ ScreenManager:
         size_hint: (0.4,0.3)
 <Blindtest_ImageScreen>:
     name: 'blindtest_image'
-    MDToolbar:
+    MDTopAppBar:
         id: compteur
         title: "Blintest"
         pos_hint: {"top": 1}
