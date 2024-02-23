@@ -1,0 +1,142 @@
+<CustLabel@Label>
+    color: .8,.1,.4,1
+
+<CustButton@Button>
+    background_normal: 'Button.png'
+    background_down: 'ButtonDown.png'
+
+<CustomPopup>:
+    size_hint: .5,.5
+    auto_dismiss: False
+    title: 'The Popup'
+    Button:
+        text: 'Close'
+        on_release: root.dismiss()
+
+SampBoxLayout:
+
+<SampBoxLayout>:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_x: .22
+
+        CustLabel:
+
+            text: 'Are you over 18?'
+            size_hint_x: .8
+
+        CheckBox:
+
+            on_active: root.checkbox_18_clicked(self, self.active)
+            size_hint_x: .55
+            
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_x: .55
+        
+        CustLabel:
+            text: 'Favorite Color'
+            size_hint_x: .265
+        
+        CheckBox:
+            group: 'fav_color'
+            value: root.blue
+            size_hint_x: .05
+        CustLabel:
+            text: 'Blue'
+            size_hint_x: .15
+        
+        CheckBox:
+            group: 'fav_color'
+            value: root.red
+            size_hint_x: .05
+        CustLabel:
+            text: 'Red'
+            size_hint_x: .15
+        
+        CheckBox:
+            group: 'fav_color'
+            value: root.green
+            size_hint_x: .05
+        CustLabel:
+            text: 'Green'
+            size_hint_x: .15
+            
+    BoxLayout:
+        orientation: 'horizontal'
+        height: 30
+        
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_x: .25
+            
+        CustLabel:
+            text: str(slider_id.value)
+            
+        Slider:
+            id: slider_id
+            min: -100
+            max: 100
+            value: 0
+            step: 1
+
+        CustLabel:
+            text: 'On / Off'
+
+        Switch:
+
+            id: switch_id
+            on_active: root.switch_on(self,self.active)
+
+    BoxLayout:
+
+        orientation: 'horizontal'
+        height: 30
+
+        BoxLayout:
+        
+            orientation: 'horizontal'
+            size_hint_x: .25
+            
+            CustButton:
+                text: 'Open Popup'
+                on_release: root.open_popup()
+    
+        BoxLayout:
+        
+            orientation: 'horizontal'
+            size_hint_x: .25
+            
+            Spinner:
+                text: 'First'
+                values: ['First','Second','Third']
+                id: spinner_id
+                on_text: root.spinner_clicked(spinner_id.text)        
+        
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_x: .5
+        
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_x: .3
+
+            TabbedPanel:
+                do_default_tab: False
+                
+                TabbedPanelItem:
+                    text: '1st Tab'
+                    Label:
+                        text: 'Content of First Panel'
+                TabbedPanelItem:
+                    text: '2nd Tab'
+                    Label:
+                        text: 'Content of Second Panel'
+                TabbedPanelItem:
+                    text: '3rd Tab'
+                    Label:
+                        text: 'Content of Third Panel'

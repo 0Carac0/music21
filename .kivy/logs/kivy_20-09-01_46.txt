@@ -1,0 +1,16 @@
+[INFO   ] Logger: Record log in C:\Users\vicoppliger\.kivy\logs\kivy_20-09-01_46.txt
+[INFO   ] deps: Successfully imported "kivy_deps.angle" 0.2.0
+[INFO   ] deps: Successfully imported "kivy_deps.glew" 0.2.0
+[INFO   ] deps: Successfully imported "kivy_deps.sdl2" 0.2.0
+[INFO   ] Kivy: v2.0.0rc3, git-20c14b2, 20200615
+[INFO   ] Kivy: Installed at "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\lib\site-packages\kivy\__init__.py"
+[INFO   ] Python: v3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)]
+[INFO   ] Python: Interpreter at "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\python.exe"
+[INFO   ] Factory: 185 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer, img_gif ignored)
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "K:/AM/PROJETS/AP/EnCours/BurnierTPI/Programmes/Spinner.py", line 28, in <module>
+[WARNING] stderr:     class mycls(FloatLayout):
+[WARNING] stderr:   File "K:/AM/PROJETS/AP/EnCours/BurnierTPI/Programmes/Spinner.py", line 31, in mycls
+[WARNING] stderr:     musList = listdir(musDir)
+[WARNING] stderr: FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:\\Users\\danburnier\\Desktop\\PythonPrograms'

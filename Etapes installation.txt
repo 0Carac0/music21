@@ -1,0 +1,25 @@
+> Pour partie python, installer:
+
+- Python3
+> la suite s'exécute en ligne de commande (CMD):
+- aller dans le répertoire des fichiers d'installation music21
+- python get-pip.py
+- pip install music21
+- pip install matplotlib
+- pip install numpy
+- pip install scipy
+
+
+> Pour lecture des fichiers midi avec VLC: (pas nécessaire si on installe MuseScore)
+
+- ouvrir VLC
+- menu outils > préférences
+- activer l'affichage de tous les paramètres (bas de fenêtre à gauche)
+- dans champ de recherche écrire synth
+  > résultat: Entrée / Codecs > Codecs audio > FluidSynth
+- Fichier SoundFont > Parcourir et entrer le chemin du fichier GeneralUser GS v1.471.sf2
+
+
+> Pour la visualisation des fichiers midi au format partition:
+
+- MuseScore (logiciel gratuit)

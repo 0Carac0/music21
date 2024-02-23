@@ -1,0 +1,26 @@
+[INFO   ] Logger: Record log in C:\Users\vicoppliger\.kivy\logs\kivy_20-09-01_48.txt
+[INFO   ] deps: Successfully imported "kivy_deps.angle" 0.2.0
+[INFO   ] deps: Successfully imported "kivy_deps.glew" 0.2.0
+[INFO   ] deps: Successfully imported "kivy_deps.sdl2" 0.2.0
+[INFO   ] Kivy: v2.0.0rc3, git-20c14b2, 20200615
+[INFO   ] Kivy: Installed at "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\lib\site-packages\kivy\__init__.py"
+[INFO   ] Python: v3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)]
+[INFO   ] Python: Interpreter at "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\python.exe"
+[INFO   ] Factory: 185 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer, img_gif ignored)
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "K:/AM/PROJETS/AP/EnCours/BurnierTPI/Programmes/TouchTest.py", line 49, in <module>
+[WARNING] stderr:     MyApp().run()
+[WARNING] stderr:   File "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\lib\site-packages\kivy\app.py", line 949, in run
+[WARNING] stderr:     self._run_prepare()
+[WARNING] stderr:   File "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\lib\site-packages\kivy\app.py", line 918, in _run_prepare
+[WARNING] stderr:     self.load_kv(filename=self.kv_file)
+[WARNING] stderr:   File "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\lib\site-packages\kivy\app.py", line 691, in load_kv
+[WARNING] stderr:     root = Builder.load_file(rfilename)
+[WARNING] stderr:   File "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\lib\site-packages\kivy\lang\builder.py", line 306, in load_file
+[WARNING] stderr:     return self.load_string(data, **kwargs)
+[WARNING] stderr:   File "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\lib\site-packages\kivy\lang\builder.py", line 404, in load_string
+[WARNING] stderr:     widget = Factory.get(parser.root.name)(__no_builder=True)
+[WARNING] stderr:   File "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\lib\site-packages\kivy\factory.py", line 146, in __getattr__
+[WARNING] stderr:     raise FactoryException('Unknown class <%s>' % name)
+[WARNING] stderr: kivy.factory.FactoryException: Unknown class <WindowManager>

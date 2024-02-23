@@ -1,0 +1,113 @@
+#:kivy 2.0
+<ScreenMaster>:
+    ScreenSelectionMenu
+    JukeBoxMode:
+    TrainingMode:
+    RecordingMode:
+    
+<ScreenSelectionMenu>:
+    name: 'select'
+    
+    FloatLayout:
+        name: 'flayout'
+        id: layout
+        
+        BoxLayout:
+            
+            pos: (0.05*layout.width, 0.5*layout.height - self.height/2)
+            size_hint: (.9, .3)
+            spacing: 30
+
+            Button:
+                id: jukeboxB
+                text: 'Jukebox Mode'
+                background_normal: ''
+                background_down_normal: ''
+                background_color: 0.4,0.1,0.6,1
+                background_color_down: 0.7,0.7,0.7,0.7
+                
+                on_press: print('Jukebox button pressed')
+                on_release:
+                    app.root.current = 'juke'
+
+            Button:
+                id: trainB
+                text: 'Traning Mode'
+                background_normal: ''
+                background_down_normal: ''
+                background_color: 0.4,0.1,0.6,1
+                background_color_down: 0.7,0.7,0.7,0.7
+                
+                on_press: print('Training button pressed')
+                on_release:
+                    app.root.current = 'train'
+
+            Button:
+                id: recordB
+                text: 'Recording Mode'
+                background_normal: ''
+                background_down_normal: ''
+                background_color: 0.4,0.1,0.6,1
+                background_color_down: 0.7,0.7,0.7,0.7
+                
+                on_press: print('Record button pressed')
+                on_release:
+                    app.root.current = 'record'
+<JukeBoxMode>:
+    name: 'juke'
+    id: jukebox
+    
+    FloatLayout:
+        id: layout
+        
+        Button:
+            id: back
+            text: 'Return'
+            size_hint: None, None
+            size: 150, 44
+            pos: 0, layout.height - self.height
+            on_press: print('Pressed RETURN button')
+            on_release: app.root.current = 'select'
+
+        Spinner:
+            id: spin
+            size_hint: None, None
+            size: 400, 44
+            pos: (layout.center_x - self.width/2, layout.height - self.height)
+            text: 'Music'
+            values: root.musicList
+            on_text:
+                root.showSelection()
+                
+
+<TrainingMode>:
+    name: 'train'
+    id: training
+    
+    FloatLayout:
+        id: layout
+        
+        Button:
+            id: back
+            text: 'Return'
+            size_hint: None, None
+            size: 150, 44
+            pos: 0, layout.height - self.height
+            on_press: print('Pressed RETURN button')
+            on_release: app.root.current = 'select'
+
+<RecordingMode>:
+    name: 'record'
+    id: recording
+    
+    FloatLayout:
+        id: layout
+        
+        Button:
+            id: back
+            text: 'Return'
+            size_hint: None, None
+            size: 150, 44
+            pos: 0, layout.height - self.height
+            on_press: print('Pressed RETURN button')
+            on_release: app.root.current = 'select'

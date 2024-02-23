@@ -1,0 +1,19 @@
+[INFO   ] Logger: Record log in C:\Users\vicoppliger\.kivy\logs\kivy_20-09-01_21.txt
+[INFO   ] deps: Successfully imported "kivy_deps.angle" 0.2.0
+[INFO   ] deps: Successfully imported "kivy_deps.glew" 0.2.0
+[INFO   ] deps: Successfully imported "kivy_deps.sdl2" 0.2.0
+[INFO   ] Kivy: v2.0.0rc3, git-20c14b2, 20200615
+[INFO   ] Kivy: Installed at "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\lib\site-packages\kivy\__init__.py"
+[INFO   ] Python: v3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)]
+[INFO   ] Python: Interpreter at "C:\Users\vicoppliger\AppData\Local\Programs\Python\Python38-32\python.exe"
+[DEBUG  ] Cache: register <kv.image> with limit=None, timeout=60
+[DEBUG  ] Cache: register <kv.atlas> with limit=None, timeout=None
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer, img_gif ignored)
+[DEBUG  ] Cache: register <kv.texture> with limit=1000, timeout=60
+[DEBUG  ] Cache: register <kv.shader> with limit=1000, timeout=3600
+[INFO   ] Processing submodule cython_runtime of kivy.graphics.gl_instructions
+[INFO   ] Processing submodule _cython_0_29_14 of kivy.graphics.gl_instructions
+[INFO   ] Processing submodule typing.io of kivy.graphics.gl_instructions
+[INFO   ] Processing submodule typing.re of kivy.graphics.gl_instructions
+[INFO   ] Processing submodule pyexpat.errors of kivy.graphics.gl_instructions
+[INFO   ] Processing submodule pyexpat.model of kivy.graphics.gl_instructions
