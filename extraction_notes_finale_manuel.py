@@ -125,7 +125,7 @@ def extract_notes(path = '/home/pi/Desktop/Music21/midi/Barbie_Girl.mid', finess
         for I in range(len(midi)):
             if not(midi[I].getInstrument(returnDefault=False)):
                 midi[I].insert(instrument.Percussion())
-                #midi[I].insert(instrument.Piano()) 
+                midi[I].insert(instrument.Piano()) 
         if debug:
             midi.show() # affichage de la partition sur MuseScore si installe
         parts = instrument.partitionByInstrument(midi)
